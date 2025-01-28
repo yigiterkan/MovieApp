@@ -43,7 +43,7 @@ export default function MovieDetails() {
   }
 
   if (!selectedMovie) {
-    return <Alert severity='info'>No movie selected</Alert>;
+    return <Alert severity="info">No movie selected</Alert>;
   }
 
   return (
@@ -70,16 +70,16 @@ export default function MovieDetails() {
               <Chip label={`Runtime: ${selectedMovie.Runtime}`} />
               <Chip label={`IMDb: ${selectedMovie.imdbRating}`} />
             </Stack>
-            <Typography variant='body1' paragraph>
+            <Typography variant='body1' gutterBottom>
               <strong>Genre:</strong> {selectedMovie.Genre}
             </Typography>
-            <Typography variant='body1' paragraph>
+            <Typography variant='body1' gutterBottom>
               <strong>Director:</strong> {selectedMovie.Director}
             </Typography>
-            <Typography variant='body1' paragraph>
+            <Typography variant='body1' gutterBottom>
               <strong>Cast:</strong> {selectedMovie.Actors}
             </Typography>
-            <Typography variant='body1' paragraph>
+            <Typography variant='body1' gutterBottom>
               <strong>Plot:</strong> {selectedMovie.Plot}
             </Typography>
             <Typography variant='body1'>
